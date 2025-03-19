@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'Ask Bharath';
-  logoPath = 'assets/images/logo.png';
+  logoPath = 'assets/images/askBharathnobg.png';
   
   ngOnInit() {
     // Initialize any app-wide services or settings here

@@ -68,13 +68,17 @@ header .header-inner {
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 12px;
+  line-height: 1;
 }
 
 .logo {
-  height: 60px;
-  margin-right: 15px;
+  height: 50px;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   transition: var(--transition);
+  object-fit: contain;
+  display: block;
+  vertical-align: middle;
   
   &:hover {
     transform: scale(1.05);
@@ -88,6 +92,11 @@ header h1 {
   color: var(--primary-color);
   letter-spacing: -0.5px;
   position: relative;
+  margin: 0;
+  align-self: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 10px;
   
   &::after {
     content: '';
@@ -689,6 +698,7 @@ footer {
   
   .logo-container {
     margin-bottom: 15px;
+    justify-content: center;
   }
   
   nav ul {
@@ -739,11 +749,15 @@ footer {
   }
   
   header h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   
   .logo {
-    height: 50px;
+    height: 40px;
+  }
+  
+  .logo-container {
+    gap: 8px;
   }
   
   #hero h2 {
