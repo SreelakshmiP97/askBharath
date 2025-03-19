@@ -1,0 +1,27 @@
+<div class="chat-bot-container">
+  <!-- Chat button always visible at the bottom right -->
+  <div id="chat-button" class="chat-button" [class.active]="isOpen">
+    <div class="icon">
+      <span *ngIf="!isOpen">🤖</span>
+      <span *ngIf="isOpen">✕</span>
+    </div>
+  </div>
+
+  <!-- Chat window that shows/hides based on isOpen -->
+  <div *ngIf="isOpen" class="chat-window">
+    <div class="chat-header">
+      <h3>Ask Bharath AI Assistant</h3>
+    </div>
+    <div id="chat-container" class="chat-messages">
+      <!-- Relevance AI will render the chat interface here -->
+      <div class="placeholder-message">
+        <p>Hello! I'm Bharath's AI assistant. How can I help you today?</p>
+        <p class="small">I can provide information about services, pricing, and help you connect with Bharath.</p>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message here..." />
+      <button>Send</button>
+    </div>
+  </div>
+</div> 

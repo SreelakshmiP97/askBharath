@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f6fc;
+  color: #1e2751;
+}
+
+/* Global Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Global Button styles */
+button {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Global custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #4a49e5; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3938b0; 
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Relevance AI Chatbot customization */
+.relevance-chat-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.relevance-chat-header {
+  background-color: #4a49e5;
+  color: white;
+}
+
+.relevance-chat-message-user {
+  background-color: #4a49e5;
+  color: white;
+  border-radius: 12px 12px 0 12px;
+}
+
+.relevance-chat-message-bot {
+  background-color: #f0f2fa;
+  border-radius: 12px 12px 12px 0;
+}
+
+.relevance-chat-input {
+  border-top: 1px solid #eaeaea;
+}
+
+.relevance-chat-input input {
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+}
