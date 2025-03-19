@@ -15,8 +15,14 @@
   <meta property="og:image" content="assets/images/logo.png">
   <meta property="og:url" content="https://askbharath.com">
   <meta property="og:type" content="website">
+  
+  <!-- Security policy to allow Relevance AI script -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.relevanceai.com; connect-src 'self' https://*.relevanceai.com; style-src 'self' 'unsafe-inline'; frame-src 'self' https://*.relevanceai.com;">
 </head>
 <body>
   <app-root></app-root>
+  
+  <!-- Relevance AI Chatbot -->
+  <script data-relevanceai-share-id="f1db6c/7a8fe2dfa3a4-4e2a-9599-27acc6cc235c/1eced2b9-40ff-462b-8e2a-11d02201d491" src="https://app.relevanceai.com/embed/chat-bubble.js" data-share-styles="starting_message_prompts=Hi+User&hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23685FFF&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false" ></script>
 </body>
 </html>
